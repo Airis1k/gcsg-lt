@@ -5,6 +5,7 @@ import reactRefresh from "eslint-plugin-react-refresh";
 import tseslint from "typescript-eslint";
 import prettierConfig from "eslint-config-prettier";
 import prettierPlugin from "eslint-plugin-prettier";
+import react from "eslint-plugin-react";
 
 export default tseslint.config({
    extends: [js.configs.recommended, ...tseslint.configs.recommended, prettierConfig],
@@ -18,10 +19,14 @@ export default tseslint.config({
       "react-hooks": reactHooks,
       "react-refresh": reactRefresh,
       prettier: prettierPlugin,
+      react,
    },
    rules: {
       ...reactHooks.configs.recommended.rules,
       "react-refresh/only-export-components": ["warn", { allowConstantExport: true }],
       "prettier/prettier": "error",
+      ...react.configs.recommended.rules,
+      ...react.configs["jsx-runtime"].rules,
    },
+   settings: { react: { version: "18.3" } },
 });
