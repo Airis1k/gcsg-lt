@@ -94,3 +94,9 @@
    margin: 0;
    font-size: 14px;
 }
+
+@media (max-width: 999px) {
+   .footerContainer {
+      display: none;
+   }
+}

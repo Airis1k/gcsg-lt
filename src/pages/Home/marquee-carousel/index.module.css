@@ -1,0 +1,85 @@
+.partnerLogo {
+   margin: 1.25rem 1.875rem 1.25rem 1.875rem;
+}
+
+.grayscale {
+   filter: grayscale(100%) opacity(50%);
+}
+
+.partnerLogo:hover {
+   filter: none;
+}
+
+.partnerImg {
+   height: 60px;
+}
+
+.container {
+   max-width: 1248px;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 0 2rem;
+}
+
+.largeContainer {
+   display: none;
+   margin-top: 5rem;
+   margin-bottom: 5rem;
+}
+
+.largeHeader {
+   margin: 0 0 2rem;
+   font-size: 2rem;
+}
+
+.carousel :global(.slick-track) {
+   display: flex !important;
+   align-items: center;
+}
+
+.carousel :global(.slick-slide) {
+   display: flex;
+   justify-content: center;
+}
+
+.carousel {
+   display: flex !important;
+   justify-content: center;
+   align-items: center;
+}
+
+.arrow {
+   height: 16px;
+   width: 16px;
+}
+
+.arrowBtn {
+   display: flex;
+   padding: 0;
+   margin: 0;
+   outline: none;
+   background: none;
+   border: none;
+   cursor: pointer;
+}
+
+.smallContainer {
+   margin-left: auto;
+   margin-right: auto;
+   padding: 0 1.5rem;
+}
+
+.smallHeader {
+   margin: 0 0 1rem;
+}
+
+@media (min-width: 770px) {
+   .largeContainer {
+      display: block;
+   }
+
+   .smallContainer {
+      visibility: hidden;
+      height: 0;
+   }
+}

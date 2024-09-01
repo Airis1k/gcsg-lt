@@ -32,6 +32,7 @@
 .companyLogo {
    width: 77px;
    display: block;
+   border-radius: 50%;
 }
 
 .innerHeaderContainer {
@@ -120,4 +121,10 @@
 .linkItem:hover {
    color: #303030;
    background-color: #ade8f4;
+}
+
+@media (max-width: 999px) {
+   .headerContainer {
+      display: none;
+   }
 }

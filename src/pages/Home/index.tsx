@@ -1,7 +1,11 @@
-import React from "react";
+import MarqueeCarousel from "./marquee-carousel";
 
 const Home = () => {
-   return <div>Home</div>;
+   return (
+      <div>
+         <MarqueeCarousel />
+      </div>
+   );
 };
 
 export default Home;
