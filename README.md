@@ -22,3 +22,9 @@ npm install
 ```
 npm run dev
 ```
+
+-  To run eslint & typescript types tests, run:
+
+```
+npm run test
+```
