@@ -123,8 +123,63 @@
    background-color: #ade8f4;
 }
 
-@media (max-width: 999px) {
-   .headerContainer {
+.mobileHeader {
+   display: none;
+   background-color: #041230;
+}
+
+.mobileContentWrap {
+   display: flex;
+   justify-content: space-between;
+   padding: 1.5rem;
+   align-items: center;
+}
+
+.hamburgerWrap {
+   color: #fff;
+}
+
+.hamburgerMenu {
+   padding: 0 1.5rem;
+   position: fixed;
+   left: 0;
+   right: 0;
+   top: 98px;
+   background-color: #041230f7;
+   z-index: 1;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+   box-shadow:
+      0 20px 25px -5px rgba(0, 0, 0, 0.1),
+      0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+.linksWrapper {
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+}
+
+.smLinkItem {
+   text-decoration: none;
+   color: #fff;
+   text-transform: uppercase;
+   letter-spacing: 0.15rem;
+   display: inline-block;
+   width: 100%;
+   border-bottom: 1px solid #ffffff1a;
+   padding: 1.5rem 0;
+}
+
+@media (max-width: 1029px) {
+   .desktopHeader {
       display: none;
+   }
+
+   .mobileHeader {
+      display: block;
+   }
+
+   .companyLogo {
+      width: 50px;
    }
 }
