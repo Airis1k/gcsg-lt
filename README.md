@@ -12,6 +12,8 @@
 git clone <url>
 ```
 
+-  Install dependencies
+
 ```
 cd <project_name>
 npm install
