@@ -1,10 +1,14 @@
+import HeroCarousel from "./hero-carousel";
+import LatestNews from "./latest-news";
 import MarqueeCarousel from "./marquee-carousel";
 
 const Home = () => {
    return (
-      <div>
+      <>
+         <HeroCarousel />
+         <LatestNews />
          <MarqueeCarousel />
-      </div>
+      </>
    );
 };
 
