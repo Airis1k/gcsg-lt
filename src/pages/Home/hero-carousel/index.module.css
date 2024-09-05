@@ -1,23 +1,50 @@
+@keyframes bounceInLeft {
+   0%,
+   20%,
+   50%,
+   80%,
+   100% {
+      transform: translateX(0);
+      opacity: 1;
+   }
+   40% {
+      transform: translateX(-20px);
+   }
+   60% {
+      transform: translateX(-10px);
+   }
+}
+
+@keyframes bounceInRight {
+   0%,
+   20%,
+   50%,
+   80%,
+   100% {
+      transform: translateX(0);
+      opacity: 1;
+   }
+   40% {
+      transform: translateX(20px);
+   }
+   60% {
+      transform: translateX(10px);
+   }
+}
+
 .photo {
    display: block;
    width: 100%;
-   /* height: 500px; */
    height: 600px;
    object-fit: cover;
 }
 
 .wrapCarousel {
-   /* width: 900px; */
    width: 1250px;
    position: relative;
 }
 
-:global(.carousel-inner) {
-   /* border-radius: 25px; */
-}
-
 .darkBorder {
-   /* border-radius: 25px; */
    position: absolute;
    top: 25px;
    bottom: -25px;
@@ -28,10 +55,19 @@
 }
 
 .container {
-   /* max-width: 1248px; */
    margin-left: auto;
    margin-right: auto;
    padding: 2rem 2rem 0;
    display: flex;
    justify-content: center;
+}
+
+:global(.carousel-control-prev):hover {
+   animation: bounceInLeft 1s ease-out;
+   animation-fill-mode: both;
+}
+
+:global(.carousel-control-next):hover {
+   animation: bounceInRight 1s ease-out;
+   animation-fill-mode: both;
 }

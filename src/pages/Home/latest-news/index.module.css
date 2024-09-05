@@ -7,11 +7,15 @@
    --gradient-stops: var(--gradient-from), var(--gradient-to);
 }
 
+.grayBackground {
+   background-color: #f6f6f6;
+}
+
 .container {
-   max-width: 1280px;
+   max-width: 1248px;
    margin-left: auto;
    margin-right: auto;
-   padding: 2rem 2rem 0;
+   padding: 5rem 2rem;
    display: flex;
    justify-content: center;
    flex-wrap: wrap;
@@ -51,7 +55,6 @@
    display: grid;
    gap: 2rem;
    grid-template-columns: repeat(3, minmax(0, 1fr));
-   margin-bottom: 15rem;
 }
 
 .articleStyle {

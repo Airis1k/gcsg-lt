@@ -22,7 +22,7 @@ export const ROUTES: Route[] = [
    },
    {
       id: 4,
-      name: "Teisinė",
+      name: "Teisinė informacija",
       link: "/teisine-informacija",
    },
 ];
