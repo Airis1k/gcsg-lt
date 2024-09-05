@@ -2,8 +2,7 @@
    max-width: 1248px;
    margin-left: auto;
    margin-right: auto;
-   padding: 0 2rem;
-   margin-bottom: 5rem;
+   padding: 5rem 2rem;
 }
 
 .accordionContainer {
@@ -13,10 +12,6 @@
 .accordionItem {
    border-bottom: 1px solid #cbd5e1;
    padding: 0px 2rem;
-}
-
-.accordionItem:hover {
-   background-color: #f8f8f8;
 }
 
 .accordionButton {
@@ -84,4 +79,8 @@
 
 .questionTitle {
    font-weight: 700;
+}
+
+.grayBackground {
+   background-color: #f6f6f6;
 }

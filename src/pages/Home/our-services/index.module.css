@@ -1,0 +1,52 @@
+.sectionHeader {
+   font-size: 2.25rem;
+   line-height: 2.5rem;
+   font-weight: 700;
+}
+
+.sectionParagraph {
+   color: rgba(75, 85, 99, 1);
+   font-size: 1.125rem;
+   line-height: 2rem;
+   margin: 0;
+}
+
+.container {
+   max-width: 1248px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: calc(5rem + 25px);
+   padding: 0 2rem;
+}
+
+.centerText {
+   text-align: center;
+   width: 100%;
+   margin-bottom: 5rem;
+}
+
+.serviceWrap {
+   width: 100%;
+   display: grid;
+   gap: 2rem;
+   grid-template-columns: repeat(3, minmax(0, 1fr));
+   align-items: start;
+}
+
+.serviceItem {
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+   padding: 40px 40px 33px 40px;
+   transition: all 0.3s ease;
+   display: flex;
+   flex-direction: column;
+   row-gap: 0.7rem;
+}
+
+.serviceItem:hover {
+   transform: scale(1.05);
+}
+
+.title {
+   margin: 0;
+   font-weight: 600;
+}
